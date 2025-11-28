@@ -1,4 +1,4 @@
-# 🛒 QUATZ Tech Store — E-Commerce Complete System
+# 🛒 QUARTZ Tech Store — E-Commerce Complete System
 
 ## 🎯 ภาพรวม
 
@@ -178,7 +178,7 @@ Background:      #f8fafc
 
 ### สำหรับทดสอบ Login
 ```
-Email:    demo@quatz.com
+Email:    demo@quartz.com
 Password: demo123
 ```
 
@@ -205,10 +205,10 @@ Mobile:   <767px   - Layout แนวตั้ง
 
 ### LocalStorage
 ```javascript
-'quatz_cart'         - ตะกร้าสินค้า
-'quatz_orders'       - คำสั่งซื้อทั้งหมด
-'quatz_latest_order' - คำสั่งซื้อล่าสุด
-'quatz_users'        - ผู้ใช้ที่สมัครแล้ว
+'quartz_cart'         - ตะกร้าสินค้า
+'quartz_orders'       - คำสั่งซื้อทั้งหมด
+'quartz_latest_order' - คำสั่งซื้อล่าสุด
+'quartz_users'        - ผู้ใช้ที่สมัครแล้ว
 'remembered_email'   - อีเมลที่จดจำ
 ```
 
@@ -248,8 +248,8 @@ Mobile:   <767px   - Layout แนวตั้ง
 3. Lenovo ThinkPad T14 - ฿45,900
 
 ### 🖥️ Desktop (2)
-4. QUATZ Gaming A5 - ฿39,900
-5. QUATZ Creator X7 - ฿72,900
+4. QUARTZ Gaming A5 - ฿39,900
+5. QUARTZ Creator X7 - ฿72,900
 
 ### 📺 Monitor (2)
 6. ASUS ProArt 27" 4K - ฿18,900
@@ -355,7 +355,7 @@ Mobile:   <767px   - Layout แนวตั้ง
 ไม่มี! (เพราะนี่คือ Demo 😊)
 
 หากพบปัญหา กรุณาแจ้งได้ที่:
-- Email: support@quatz.example
+- Email: support@quartz.example
 
 ---
 
@@ -450,7 +450,7 @@ MIT License - ใช้งานได้ฟรี
 
 ## 👨‍💻 Author
 
-**QUATZ Tech Store Team**
+**QUARTZ Tech Store Team**
 
 พัฒนาด้วย ❤️ และความใส่ใจในรายละเอียด
 
@@ -479,16 +479,16 @@ MIT License - ใช้งานได้ฟรี
 ## 📞 Support & Contact
 
 ### Technical Support
-- Email: support@quatz.example
-- Website: quatz.example
+- Email: support@quartz.example
+- Website: quartz.example
 
 ### Sales & Business
-- Email: sales@quatz.example
+- Email: sales@quartz.example
 - Phone: 02-123-4567
 
 ### Address
 ```
-QUATZ Tech Store
+QUARTZ Tech Store
 123 ถนนสุขุมวิท
 แขวงคลองเตย เขตคลองเตย
 กรุงเทพมหานคร 10110
@@ -499,7 +499,7 @@ QUATZ Tech Store
 
 ## 🎉 ขอบคุณ!
 
-ขอบคุณที่ใช้งาน QUATZ Tech Store!
+ขอบคุณที่ใช้งาน QUARTZ Tech Store!
 
 หวังว่าจะชอบระบบนี้นะคะ 😊
 
@@ -512,5 +512,6 @@ QUATZ Tech Store
 ---
 
 **สร้างด้วย 💙 สำหรับชุมชน Developer ไทย**
-#   F i a w k u n g  
+#   F i a w k u n g 
+ 
  

@@ -1,4 +1,4 @@
-// ===================== QUATZ Tech Store — Register Logic =====================
+// ===================== QUARTZ Tech Store — Register Logic =====================
 
 // ---------- DOM Elements ----------
 const registerForm = document.getElementById('registerForm');
@@ -220,7 +220,7 @@ function handleRegister(e) {
   // Simulate API call
   setTimeout(() => {
     // Check if email already exists (demo)
-    const existingUsers = JSON.parse(localStorage.getItem('quatz_users') || '[]');
+    const existingUsers = JSON.parse(localStorage.getItem('quartz_users') || '[]');
     const emailExists = existingUsers.some(user => user.email === email);
     
     if (emailExists) {
@@ -240,7 +240,7 @@ function handleRegister(e) {
     };
     
     existingUsers.push(newUser);
-    localStorage.setItem('quatz_users', JSON.stringify(existingUsers));
+    localStorage.setItem('quartz_users', JSON.stringify(existingUsers));
     
     // Auto login
     sessionStorage.setItem('user_logged_in', 'true');

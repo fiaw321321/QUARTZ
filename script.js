@@ -1,12 +1,12 @@
-// ===================== QUATZ Tech Store — Logic =====================
+// ===================== QUARTZ Tech Store — Logic =====================
 
 // ---------- Products ----------
 const products = [
   { id: 1,  name: 'MacBook Pro 14 (M3)', category: 'laptop',  price: 75900, icon: 'bi-laptop', image: 'https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/macbook-pro-14-inch-m3-pro-or-m3.png', desc: 'ชิป Apple M3 ประสิทธิภาพสูง เหมาะงานตัดต่อ/พกพา', specs: ['M3 8-core', 'RAM 16GB', 'SSD 512GB', 'Liquid Retina XDR 14"'] },
   { id: 2,  name: 'Dell XPS 15',         category: 'laptop',  price: 68900, icon: 'bi-laptop', image: 'https://media-cdn.bnn.in.th/98730/Dell-Notebook-XPS15-9500-W5671700THW10-Silver-1-square_medium.jpg', desc: 'จอสวย ขอบบาง งานพรีเมียม', specs: ['Intel Core i7', 'RAM 16GB', 'SSD 1TB', 'OLED 15.6" 3.5K'] },
   { id: 3,  name: 'Lenovo ThinkPad T14', category: 'laptop',  price: 45900, icon: 'bi-laptop', image: 'https://p4-ofp.static.pub//fes/cms/2024/03/27/mo52s9lzdkybc5gqgao9op5793fw47934281.png?width=400&height=400', desc: 'ทนทาน งานองค์กร คีย์บอร์ดดี', specs: ['Intel Core i5', 'RAM 16GB', 'SSD 512GB', '14" FHD IPS'] },
-  { id: 4,  name: 'QUATZ Gaming A5',     category: 'desktop', price: 39900, icon: 'bi-pc', image: 'https://static.gigabyte.com/StaticFile/Image/Global/8e7bd56279b6d1402003fb94d0c43647/Product/27072/webp/2000', desc: 'เกมมิ่งระดับเริ่มต้น เล่น eSport ลื่น', specs: ['Ryzen 5 5600', 'RTX 3060 12GB', 'RAM 16GB', 'SSD 512GB'] },
-  { id: 5,  name: 'QUATZ Creator X7',    category: 'desktop', price: 72900, icon: 'bi-pc-display', image: 'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800&h=800&fit=crop', desc: 'สายครีเอเตอร์ ตัดต่อ/เรนเดอร์เร็ว', specs: ['Core i7-13700', 'RTX 4070 12GB', 'RAM 32GB', 'SSD 1TB NVMe'] },
+  { id: 4,  name: 'QUARTZ Gaming A5',     category: 'desktop', price: 39900, icon: 'bi-pc', image: 'https://static.gigabyte.com/StaticFile/Image/Global/8e7bd56279b6d1402003fb94d0c43647/Product/27072/webp/2000', desc: 'เกมมิ่งระดับเริ่มต้น เล่น eSport ลื่น', specs: ['Ryzen 5 5600', 'RTX 3060 12GB', 'RAM 16GB', 'SSD 512GB'] },
+  { id: 5,  name: 'QUARTZ Creator X7',    category: 'desktop', price: 72900, icon: 'bi-pc-display', image: 'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800&h=800&fit=crop', desc: 'สายครีเอเตอร์ ตัดต่อ/เรนเดอร์เร็ว', specs: ['Core i7-13700', 'RTX 4070 12GB', 'RAM 32GB', 'SSD 1TB NVMe'] },
   { id: 6,  name: 'ASUS ProArt 27" 4K',  category: 'monitor', price: 18900, icon: 'bi-display', image: 'https://media-cdn.bnn.in.th/314901/ASUS-MONITOR-PA279CRV-(IPS-4K-60Hz-USB-C)-1-square_medium.jpg', desc: 'จอทำสีแม่นยำ 100% sRGB', specs: ['27" 4K IPS', 'ΔE<2', 'HDR10', 'USB-C 65W'] },
   { id: 7,  name: 'Samsung Odyssey G5',  category: 'monitor', price: 11900, icon: 'bi-display', image: 'https://media-cdn.bnn.in.th/74495/SAMSUNG-MONITOR-Odyssey-G5-LC32G55TQWEXXT-VA-2K-144Hz-1-square_medium.jpg', desc: 'โค้ง 1000R เล่นเกมลื่น', specs: ['27" QHD 165Hz', '1ms', 'FreeSync Premium'] },
   { id: 8,  name: 'Logitech MX Keys',    category: 'accessory', price: 3990, icon: 'bi-keyboard', image: 'https://media-cdn.bnn.in.th/212945/5-square_medium.jpg', desc: 'คีย์บอร์ดทำงานพิมพ์สบาย ต่อหลายเครื่อง', specs: ['Wireless', 'Illuminated', 'USB-C Charge'] },
@@ -18,7 +18,7 @@ const products = [
 
 // ---------- State ----------
 let filteredProducts = [...products];
-let cart = JSON.parse(localStorage.getItem('cart_quatz')) || [];
+let cart = JSON.parse(localStorage.getItem('cart_quartz')) || [];
 let currentProduct = null;
 let viewMode = 'grid'; // 'grid' | 'list'
 
@@ -45,7 +45,7 @@ function setupEventListeners() {
     if (cart.length === 0) return showNotification('ตะกร้าว่างเปล่า');
     
     // บันทึกตะกร้าไว้สำหรับหน้าชำระเงิน
-    localStorage.setItem('quatz_cart', JSON.stringify(cart));
+    localStorage.setItem('quartz_cart', JSON.stringify(cart));
     
     // ไปหน้าชำระเงิน
     window.location.href = 'checkout.html';
@@ -219,14 +219,14 @@ function addToCart(id){
   const existing = cart.find(i=>i.id===id);
   if(existing){ existing.quantity++; }
   else{ cart.push({...p, quantity:1}); }
-  localStorage.setItem('cart_quatz', JSON.stringify(cart));
+  localStorage.setItem('cart_quartz', JSON.stringify(cart));
   updateCartUI();
   showNotification('เพิ่มสินค้าลงตะกร้าแล้ว');
 }
 
 function removeFromCart(id){
   cart = cart.filter(i=>i.id!==id);
-  localStorage.setItem('cart_quatz', JSON.stringify(cart));
+  localStorage.setItem('cart_quartz', JSON.stringify(cart));
   updateCartUI();
 }
 
@@ -317,7 +317,7 @@ function showUserMenu() {
   menu.innerHTML = `
     <div style="padding: 12px 16px; border-bottom: 1px solid #e2e8f0;">
       <div style="font-weight: 700; color: #0f172a;">${userEmail}</div>
-      <div style="font-size: .85rem; color: #64748b;">สมาชิก QUATZ</div>
+      <div style="font-size: .85rem; color: #64748b;">สมาชิก QUARTZ</div>
     </div>
     <button class="user-menu-item" onclick="showProfile()">
       <i class="bi bi-person"></i> โปรไฟล์
@@ -355,7 +355,7 @@ function showProfile() {
   const userName = sessionStorage.getItem('user_name') || 'ผู้ใช้';
   
   // Get user data from localStorage if exists
-  const users = JSON.parse(localStorage.getItem('quatz_users') || '[]');
+  const users = JSON.parse(localStorage.getItem('quartz_users') || '[]');
   const currentUser = users.find(u => u.email === userEmail);
   
   const modal = document.createElement('div');
@@ -374,7 +374,7 @@ function showProfile() {
               <i class="bi bi-person-fill" style="font-size: 40px; color: #fff;"></i>
             </div>
             <h4 style="margin: 0; color: #0f172a;">${userName}</h4>
-            <p style="color: #64748b; margin: 4px 0;">สมาชิก QUATZ</p>
+            <p style="color: #64748b; margin: 4px 0;">สมาชิก QUARTZ</p>
           </div>
           
           <div style="background: #f8fafc; border-radius: 12px; padding: 16px; margin-bottom: 16px;">
@@ -422,7 +422,7 @@ function showProfile() {
 function showOrderHistory() {
   closeUserMenu();
   
-  const orders = JSON.parse(localStorage.getItem('quatz_orders') || '[]');
+  const orders = JSON.parse(localStorage.getItem('quartz_orders') || '[]');
   const userEmail = sessionStorage.getItem('user_email');
   
   // Filter orders for current user
@@ -515,7 +515,7 @@ function showOrderHistory() {
 
 // ---------- View Order Receipt ----------
 function viewOrderReceipt(orderNumber) {
-  const orders = JSON.parse(localStorage.getItem('quatz_orders') || '[]');
+  const orders = JSON.parse(localStorage.getItem('quartz_orders') || '[]');
   const order = orders.find(o => o.orderNumber === orderNumber);
   
   if (order) {
@@ -628,12 +628,12 @@ function saveSettings() {
     
     // Update in localStorage if user exists
     const userEmail = sessionStorage.getItem('user_email');
-    const users = JSON.parse(localStorage.getItem('quatz_users') || '[]');
+    const users = JSON.parse(localStorage.getItem('quartz_users') || '[]');
     const userIndex = users.findIndex(u => u.email === userEmail);
     
     if (userIndex !== -1) {
       users[userIndex].fullName = newName;
-      localStorage.setItem('quatz_users', JSON.stringify(users));
+      localStorage.setItem('quartz_users', JSON.stringify(users));
     }
     
     // Update display
@@ -666,9 +666,9 @@ function deleteAccount() {
       const userEmail = sessionStorage.getItem('user_email');
       
       // Remove from users list
-      const users = JSON.parse(localStorage.getItem('quatz_users') || '[]');
+      const users = JSON.parse(localStorage.getItem('quartz_users') || '[]');
       const updatedUsers = users.filter(u => u.email !== userEmail);
-      localStorage.setItem('quatz_users', JSON.stringify(updatedUsers));
+      localStorage.setItem('quartz_users', JSON.stringify(updatedUsers));
       
       // Logout
       sessionStorage.clear();

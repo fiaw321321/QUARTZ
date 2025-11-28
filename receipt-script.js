@@ -1,4 +1,4 @@
-// ===================== QUATZ Tech Store — Receipt Logic =====================
+// ===================== QUARTZ Tech Store — Receipt Logic =====================
 
 // ---------- State ----------
 let orderData = null;
@@ -54,7 +54,7 @@ function loadOrderData() {
   }
 
   // Fallback to localStorage
-  const savedOrder = localStorage.getItem('quatz_latest_order');
+  const savedOrder = localStorage.getItem('quartz_latest_order');
   if (savedOrder) {
     try {
       orderData = JSON.parse(savedOrder);
@@ -199,7 +199,7 @@ function downloadPDF() {
   // PDF options
   const options = {
     margin: [10, 10, 10, 10],
-    filename: `QUATZ_Receipt_${orderData.orderNumber}.pdf`,
+    filename: `QUARTZ_Receipt_${orderData.orderNumber}.pdf`,
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { 
       scale: 2,
@@ -338,7 +338,7 @@ window.addEventListener('beforeprint', () => {
 });
 
 window.addEventListener('afterprint', () => {
-  document.title = 'ใบเสร็จรับเงิน — QUATZ Tech Store';
+  document.title = 'ใบเสร็จรับเงิน — QUARTZ Tech Store';
 });
 
 // ---------- Share Receipt (Future Enhancement) ----------
@@ -346,7 +346,7 @@ function shareReceipt() {
   if (navigator.share) {
     navigator.share({
       title: `ใบเสร็จ ${orderData.orderNumber}`,
-      text: `คำสั่งซื้อ ${orderData.orderNumber} จาก QUATZ Tech Store`,
+      text: `คำสั่งซื้อ ${orderData.orderNumber} จาก QUARTZ Tech Store`,
       url: window.location.href
     }).catch(error => {
       console.log('Error sharing:', error);

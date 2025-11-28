@@ -1,4 +1,4 @@
-// ===================== QUATZ Tech Store — Login Logic =====================
+// ===================== QUARTZ Tech Store — Login Logic =====================
 
 // ---------- DOM Elements ----------
 const loginForm = document.getElementById('loginForm');
@@ -143,7 +143,7 @@ function handleLogin(e) {
   // Simulate API call
   setTimeout(() => {
     // Demo credentials (in production, this would be a real API call)
-    if (email === 'demo@quatz.com' && password === 'demo123') {
+    if (email === 'demo@quartz.com' && password === 'demo123') {
       // Success
       if (rememberMe) {
         localStorage.setItem('remembered_email', email);
@@ -255,7 +255,7 @@ setTimeout(() => {
   `;
   hint.innerHTML = `
     <strong><i class="bi bi-info-circle me-1"></i> สำหรับทดสอบ:</strong><br>
-    Email: <code style="background:#fff;padding:2px 6px;border-radius:4px">demo@quatz.com</code><br>
+    Email: <code style="background:#fff;padding:2px 6px;border-radius:4px">demo@quartz.com</code><br>
     Password: <code style="background:#fff;padding:2px 6px;border-radius:4px">demo123</code>
   `;
   

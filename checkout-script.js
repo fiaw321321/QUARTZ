@@ -1,4 +1,4 @@
-// ===================== QUATZ Tech Store — Checkout Logic =====================
+// ===================== QUARTZ Tech Store — Checkout Logic =====================
 
 // ---------- State ----------
 let cartItems = [];
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ---------- Load Cart Data ----------
 function loadCartData() {
-  const savedCart = localStorage.getItem('quatz_cart');
+  const savedCart = localStorage.getItem('quartz_cart');
   if (savedCart) {
     cartItems = JSON.parse(savedCart);
   }
@@ -339,7 +339,7 @@ function placeOrder() {
     saveOrder(formData);
 
     // Clear cart
-    localStorage.removeItem('quatz_cart');
+    localStorage.removeItem('quartz_cart');
     cartItems = [];
 
     // Update cart badge
@@ -361,12 +361,12 @@ function placeOrder() {
 // ---------- Save Order ----------
 function saveOrder(order) {
   // Save to localStorage (ในระบบจริงจะส่งไป server)
-  const orders = JSON.parse(localStorage.getItem('quatz_orders') || '[]');
+  const orders = JSON.parse(localStorage.getItem('quartz_orders') || '[]');
   orders.push(order);
-  localStorage.setItem('quatz_orders', JSON.stringify(orders));
+  localStorage.setItem('quartz_orders', JSON.stringify(orders));
 
   // Save latest order for receipt
-  localStorage.setItem('quatz_latest_order', JSON.stringify(order));
+  localStorage.setItem('quartz_latest_order', JSON.stringify(order));
 }
 
 // ---------- View Receipt ----------

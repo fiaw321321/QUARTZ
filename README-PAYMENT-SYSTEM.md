@@ -1,4 +1,4 @@
-# 💳 ระบบชำระเงินและใบเสร็จ — QUATZ Tech Store
+# 💳 ระบบชำระเงินและใบเสร็จ — QUARTZ Tech Store
 
 ## 🎯 ภาพรวม
 
@@ -191,16 +191,16 @@ receipt.html →
 ### LocalStorage Keys
 ```javascript
 // ตะกร้าสินค้า
-'quatz_cart' = [...]
+'quartz_cart' = [...]
 
 // คำสั่งซื้อทั้งหมด
-'quatz_orders' = [...]
+'quartz_orders' = [...]
 
 // คำสั่งซื้อล่าสุด (สำหรับใบเสร็จ)
-'quatz_latest_order' = {...}
+'quartz_latest_order' = {...}
 
 // ผู้ใช้ที่สมัครแล้ว
-'quatz_users' = [...]
+'quartz_users' = [...]
 ```
 
 ### SessionStorage Keys
@@ -468,7 +468,7 @@ FREESHIP → จัดส่งฟรี
 
 ## 🙏 Credits
 
-**Developed with ❤️ for QUATZ Tech Store**
+**Developed with ❤️ for QUARTZ Tech Store**
 
 - Design: Apple-inspired + Modern E-commerce
 - Icons: Bootstrap Icons
@@ -481,8 +481,8 @@ FREESHIP → จัดส่งฟรี
 ## 📧 Support
 
 หากพบปัญหาหรือต้องการคำแนะนำ:
-- Email: support@quatz.example
-- Website: quatz.example
+- Email: support@quartz.example
+- Website: quartz.example
 
 ---
 
@@ -492,4 +492,4 @@ FREESHIP → จัดส่งฟรี
 
 ---
 
-**🎉 ขอบคุณที่ใช้ระบบชำระเงินของ QUATZ Tech Store!**
+**🎉 ขอบคุณที่ใช้ระบบชำระเงินของ QUARTZ Tech Store!**
