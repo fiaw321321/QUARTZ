@@ -158,7 +158,7 @@ Background:      #f8fafc
 3. กรอกข้อมูลการจัดส่ง
 4. เลือกวิธีจัดส่ง
 5. เลือกวิธีชำระเงิน
-6. ใส่ Promo Code (ถ้าม)
+6. ใส่ Promo Code (ถ้ามี)
 7. ตรวจสอบยอดรวม
 8. กด "ยืนยันคำสั่งซื้อ"
 ```
@@ -209,7 +209,7 @@ Mobile:   <767px   - Layout แนวตั้ง
 'quartz_orders'       - คำสั่งซื้อทั้งหมด
 'quartz_latest_order' - คำสั่งซื้อล่าสุด
 'quartz_users'        - ผู้ใช้ที่สมัครแล้ว
-'remembered_email'   - อีเมลที่จดจำ
+'remembered_email'    - อีเมลที่จดจำ
 ```
 
 ### SessionStorage
@@ -298,23 +298,23 @@ Mobile:   <767px   - Layout แนวตั้ง
 ### สำคัญ!
 นี่คือ **Demo System** ไม่ใช่ Production:
 
-❌ ไม่มี Backend
-❌ ไม่มี Database
-❌ ไม่มี Payment Gateway จริง
-❌ ข้อมูลบัตรไม่ได้ส่งไปที่ใด
-❌ ไม่มี Encryption
+❌ ไม่มี Backend  
+❌ ไม่มี Database  
+❌ ไม่มี Payment Gateway จริง  
+❌ ข้อมูลบัตรไม่ได้ส่งไปที่ใด  
+❌ ไม่มี Encryption  
 
 ### สำหรับใช้งานจริง ควรเพิ่ม:
-✅ Backend API (Node.js, PHP, etc.)
-✅ Database (MySQL, MongoDB, etc.)
-✅ Payment Gateway (Stripe, Omise, 2C2P)
-✅ HTTPS/SSL
-✅ Data Encryption
-✅ Input Sanitization
-✅ CSRF Protection
-✅ Rate Limiting
-✅ Email Service
-✅ SMS Service
+✅ Backend API (Node.js, PHP, etc.)  
+✅ Database (MySQL, MongoDB, etc.)  
+✅ Payment Gateway (Stripe, Omise, 2C2P)  
+✅ HTTPS/SSL  
+✅ Data Encryption  
+✅ Input Sanitization  
+✅ CSRF Protection  
+✅ Rate Limiting  
+✅ Email Service  
+✅ SMS Service  
 
 ---
 
@@ -416,12 +416,12 @@ Mobile:   <767px   - Layout แนวตั้ง
 ## 🎓 เรียนรู้เพิ่มเติม
 
 ### HTML/CSS/JavaScript
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [W3Schools](https://www.w3schools.com/)
+- MDN Web Docs
+- W3Schools
 
 ### Bootstrap
-- [Bootstrap Docs](https://getbootstrap.com/docs/)
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- Bootstrap Docs
+- Bootstrap Icons
 
 ### E-Commerce Best Practices
 - UX Design Patterns
@@ -452,7 +452,9 @@ MIT License - ใช้งานได้ฟรี
 
 **QUARTZ Tech Store Team**
 
-พัฒนาด้วย ❤️ และความใส่ใจในรายละเอียด
+พัฒนาด้วย ❤️ และความใส่ใจในรายละเอียด  
+
+**Special Thanks:** Fiawkung
 
 ---
 
@@ -512,6 +514,3 @@ QUARTZ Tech Store
 ---
 
 **สร้างด้วย 💙 สำหรับชุมชน Developer ไทย**
-#   F i a w k u n g 
- 
- 

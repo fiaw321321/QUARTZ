@@ -470,11 +470,11 @@ FREESHIP → จัดส่งฟรี
 
 **Developed with ❤️ for QUARTZ Tech Store**
 
-- Design: Apple-inspired + Modern E-commerce
-- Icons: Bootstrap Icons
-- Framework: Bootstrap 5
-- PDF: html2pdf.js
-- Fonts: System Fonts
+- Design: Apple-inspired + Modern E-commerce  
+- Icons: Bootstrap Icons  
+- Framework: Bootstrap 5  
+- PDF: html2pdf.js  
+- Fonts: System Fonts  
 
 ---
 
